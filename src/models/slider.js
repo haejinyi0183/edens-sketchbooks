@@ -6,6 +6,7 @@ function slider() {
         "Most pets are surrendered for adoption due to no fault of their own...",
         "If you'd like to take a leap towards adopting a pet, click on the green paw!"
     ]
+    
     let i = 0;
     const slides = document.querySelector('#slides');
     

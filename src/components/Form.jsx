@@ -4,7 +4,6 @@ import { handleClick } from "../models/handleClick";
 
 
 function Form() {
-  const year = new Date().getFullYear();
   <a href="top" id="top" hidden>.</a>
  
   return (
@@ -40,7 +39,6 @@ function Form() {
       </form>
 
       <footer className="footerText text-center">
-        <p className="text-center text-muted">Edens Pals ⓒ {year}</p>
       </footer>
     </div>
   );
