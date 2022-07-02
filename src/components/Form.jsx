@@ -1,16 +1,15 @@
 import React from "react";
 import { handleClick } from "../models/handleClick";
 
-
-
 function Form() {
   <a href="top" id="top" hidden>.</a>
  
   return (
-    <div className="container">
+    <div className="container search-box">
+    <h1 className="text-center text-white">Start your journey below</h1>
       <form action="/" method="post" className="pet-form">
-        <div className="form-group ">
-          <label htmlFor="animal">Animal</label>
+        <div className="form-group">
+          <label className="text-white h3" htmlFor="animal">Animal</label>
           <select
             id="animal"
             className="form-control form-control-lg form-control-inline mb-3"

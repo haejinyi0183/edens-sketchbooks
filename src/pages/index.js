@@ -1,17 +1,15 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import BackToTop from "../components/BackToTop";
 import Slider from "../models/slider";
 
 const Home = () => {
-    return(
-      <>
+  return (
+    <>
       <Nav />
-        <Slider />
-        <BackToTop />
-        <Footer />
-        </>
-    )
-}
+      <Slider />
+      <Footer />
+    </>
+  );
+};
 
 export default Home;
