@@ -1,8 +1,14 @@
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+
 const SignOn = () => {
 
     return (
-        <h1>SignOn</h1>
-    )
+        <>
+            <Nav />
+            <Footer />
+            </>
+        )
 }
 
 export default SignOn;

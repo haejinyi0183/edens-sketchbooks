@@ -3,9 +3,8 @@ export function showAnimals(pets) {
 
   results.innerHTML = "";
 
-  // loop through pets
   pets.forEach((pet) => {
-    // create elements
+    
     const div = document.createElement("div");
     div.classList.add("card", "mb-3");
     div.innerHTML = `
