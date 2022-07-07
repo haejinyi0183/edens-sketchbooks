@@ -5,6 +5,7 @@ import Newsletter from "./pages/newsletter";
 import PetFinderHome from "./pages/petFinderHome"
 import PetFinder from "./pages/petFinder";
 import SignOn from "./pages/signOn";
+
 import "./App.css";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path="/newsletter" element={<Newsletter />} />
           <Route path="/petFinderHome" element={<PetFinderHome />} />
           <Route path="/petfinder" element={<PetFinder />} />
-          <Route path="/sign-on" element={<SignOn />} />
+          <Route path="/signOn" element={<SignOn />} />
         </Routes>
       </Router>
     </div>

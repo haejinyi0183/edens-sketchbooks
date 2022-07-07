@@ -1,6 +1,5 @@
 const modal = document.querySelector(".modal");
 const btn = document.querySelector(".pencil");
-const closeBtn = document.querySelector(".closeBtn");
 
 const img = ".pastelColor img",
   canvas = "#cs",

@@ -1,12 +1,7 @@
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-import gif from "../images/signon-screen.gif"
 
-const SignOn = () => {         
-            
+
+const Welcome = () => {
   return (
-    <>
-    <Nav />
     <div>
       <main class="form-signin text-center">
         <form>
@@ -22,17 +17,13 @@ const SignOn = () => {
       </main>
       <img
         className="image rounded mx-auto d-block"
-        src={gif}
+        src="./signon-screen.gif"
         alt="My Project GIF"
         width="550"
         height="350"
       />
     </div>
-    <Footer />
-    </>
   );
 };
 
-
-
-export default SignOn;
+export default Welcome;

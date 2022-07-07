@@ -2,9 +2,9 @@ import Footer from "../components/Footer";
 import HomeNav from "../components/HomeNav";
 import manImage from "../images/man.png";
 import pastel from "../images/pastel.jpg";
-import Canvas from "../models/colorPastel";
+// import Canvas from "../models/colorPastel";
 const Home = () => {
-  {Canvas()}
+  
   return (
     <>
       <HomeNav />
