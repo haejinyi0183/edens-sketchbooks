@@ -1,8 +1,7 @@
-require("dotenv").config();
+// require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const router = express.Router();
 const uri = process.env.REACT_APP_MONGO_URI;
 
 
@@ -25,14 +24,14 @@ mongoose
   });
 
   app.get("/", (req, res) => {
-    res.sendFile("/Users/haejinjeong/Documents/webdev/edens-sketchbooks/src/pages/index.js");
+    res.sendFile("https://edens-sketchbook.herokuapp.com/");
   });
 
   app.post('/', user);
 
 
 
-app.listen(process.env.REACT_APP_PORT, () => {
-  console.log(`Listening on port ${process.env.REACT_APP_PORT}`);
-});
+  app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
 
