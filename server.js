@@ -1,13 +1,13 @@
-// require("dotenv").config();
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const uri = process.env.REACT_APP_MONGO_URI;
+const uri = process.env.MONGO_URI;
 
 
 const app = express();
 
-app.use(express.static(__dirname ));
+app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -24,7 +24,7 @@ mongoose
   });
 
   app.get("/", (req, res) => {
-    res.sendFile("https://edens-sketchbook.herokuapp.com/");
+    res.sendFile("https://edens-sketchbook.herokuapp.com");
   });
 
   app.post('/', user);
