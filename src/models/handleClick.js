@@ -38,7 +38,6 @@ export async function handleClick(event) {
       )
         .then((res) => res.json())
         .then((data) => showAnimals(data.animals));
-      console.log(showAnimals);
     })
     .catch((err) => console.error(err));
 }
