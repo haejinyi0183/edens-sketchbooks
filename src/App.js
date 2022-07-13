@@ -1,6 +1,5 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/index";
+import Home from "./pages/home";
 import Welcome from "./pages/welcomeNewsletter";
 import PetFinderHome from "./pages/petFinderHome"
 import PetFinder from "./pages/petFinder";

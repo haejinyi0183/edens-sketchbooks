@@ -44,7 +44,7 @@ const Home = () => {
               Often heard recommendations to build something within my passion.
               Our family adores our pup, so I tinkered with the Petfinder API
               and created a tool to search for{" "}
-              <a href="./petFinderHome">pet adoption</a>.
+              <a href="https://edens-pals.herokuapp.com/">pet adoption</a>.
             </li>
             <li>
               Created a{" "}

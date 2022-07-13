@@ -3,11 +3,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const uri = process.env.MONGO_URI;
-
+const path = require('path');
+const fs = require('fs');
 
 const app = express();
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'build')));
+console.log(path.join(__dirname, 'build'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -23,9 +25,9 @@ mongoose
     console.error("Error connecting to the database.");
   });
 
-  app.get("/", (req, res) => {
-    res.sendFile("https://edens-sketchbook.herokuapp.com");
-  });
+  app.get('/', async (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  })
 
   app.post('/', user);
 
