@@ -9,7 +9,6 @@ const fs = require('fs');
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'build')));
-console.log(path.join(__dirname, 'build'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -27,6 +26,14 @@ mongoose
 
   app.get('/', async (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  })
+
+  app.get('/petFinderHome', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  })
+
+  app.get('/petfinder', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
   })
 
   app.post('/', user);

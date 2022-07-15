@@ -2,7 +2,7 @@
 
 const handleSubmit = (props) => {
 
-    const postURL = 'http://localhost:3000/'
+    const postURL = 'http://localhost:3000/petfinder'
 
     fetch(postURL, {
         method: 'POST',
