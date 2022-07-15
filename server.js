@@ -24,7 +24,7 @@ mongoose
     console.error("Error connecting to the database.");
   });
 
-  app.get('/', async (req, res) => {
+  app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   })
 

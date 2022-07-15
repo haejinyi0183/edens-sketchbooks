@@ -25,6 +25,7 @@ export async function handleClick(event) {
     .then((res) => res.json())
     .then((data) => {
       token = data.access_token;
+      console.log(token);
     })
     .then(() => {
       fetch(

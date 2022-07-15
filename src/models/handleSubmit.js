@@ -2,7 +2,7 @@
 
 const handleSubmit = (props) => {
 
-    const postURL = 'http://localhost:3000/petfinder'
+    const postURL = 'https://edens-sketchbook.herokuapp.com/petfinder'
 
     fetch(postURL, {
         method: 'POST',
