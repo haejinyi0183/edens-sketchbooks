@@ -131,6 +131,29 @@ a:visited {
   margin-top: -180px;
  }
 
+ .form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1;
+  border-bottom-left-radius: 1;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 1;
+  border-top-right-radius: 1;
+}
+
 .grow {
   transition: all 0.3s ease-in-out;
 }
@@ -151,6 +174,12 @@ a:visited {
   background: transparent !important;
   position: fixed;
   color: cornsilk;
+}
+
+.image {
+  max-width: 80%;
+  width: 80%;
+  height: auto !important;
 }
 
 .inputPadding {

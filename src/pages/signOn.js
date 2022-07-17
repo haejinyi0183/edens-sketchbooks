@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import gif from "../images/signon-screen.gif"
+import manImage from "../images/man.png";
+
 
 const SignOn = () => {         
             
@@ -8,25 +9,42 @@ const SignOn = () => {
     <>
     <Nav />
     <div>
-      <main class="form-signin text-center">
-        <form>
-          <img
-            className="mb-4"
-            src="public/images/man.png"
-            alt="logo"
-            width="170"
-            height="195"
+    <main className="form-signin text-center">
+      <form action="/signOn" method="post">
+        <img
+          className="mb-5"
+          src={manImage}
+          alt="logo"
+          width="170"
+          height="195"
+        />
+        <h1 className="mb-3 fw-normal">Please Register</h1>
+
+        <div className="form-floating">
+          <input
+            name="email"
+            type="email"
+            className="form-control"
+            placeholder="name@example.com"
+            autocomplete="off"
           />
-          <h1 className="mt-4 fw-normal">Welcome~</h1>
-        </form>
-      </main>
-      <img
-        className="image rounded mx-auto d-block"
-        src={gif}
-        alt="My Project GIF"
-        width="550"
-        height="350"
-      />
+          <label className="text-muted">Email address</label>
+        </div>
+        <div className="form-floating">
+          <input
+            name="password"
+            type="password"
+            className="form-control"
+            placeholder="Password"
+          />
+          <label className="text-muted">Password</label>
+        </div>
+
+        <button className="w-100 btn btn-lg btn-primary" type="submit">
+          Submit
+        </button>
+      </form>
+    </main>
     </div>
     <Footer />
     </>

@@ -6,7 +6,7 @@ const pencil = require("../images/pencil.png");
 
 const HomeNav = () => {
 
-    const [ modal, setModal ] = useState(false);
+    const [ modal, setModal ] = useState(true);
     const Toggle = () => setModal(!modal);
 
     const [ name, setName ] = useState();

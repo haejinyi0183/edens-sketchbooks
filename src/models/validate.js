@@ -1,8 +1,8 @@
-export function isValidZip(zip) {
+export const isValidZip = (zip) => {
     return /^\d{5}(-\d{4})?$/.test(zip);
   }
   
-  export function showAlert(message, className) {
+  export const showAlert = (message, className) => {
     
     const div = document.createElement('div');
     div.className = `alert alert-${className}`;

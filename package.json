@@ -2,7 +2,7 @@
   "name": "edens-sketchbooks",
   "version": "0.1.0",
   "private": true,
-  "main": "src/pages/index.js",
+  "main": "http://localhost:3000/",
   "proxy": "http://localhost:3000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

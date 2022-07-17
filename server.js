@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const uri = process.env.MONGO_URI;
 const path = require('path');
-const fs = require('fs');
+// const fs = require('fs');
 
 const app = express();
 
@@ -36,7 +36,21 @@ mongoose
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
   })
 
-  app.post('/', user);
+  app.get('/signOn', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  })
+
+  app.get('/welcomeNewsletter', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  })
+  // app.use("/", function (req, res, next) {
+  //   res.redirect("/welcomeNewsletter");
+  //   next();
+  // });
+
+  app.post('/signOn', user, (req, res) => {
+    res.redirect('http://');
+  });
 
 
 
