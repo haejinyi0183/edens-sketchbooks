@@ -61,7 +61,7 @@ const Home = () => {
 
         <div className="pastelColor">
           <div className="preview result">
-            {" "}
+    
             <span>&nbsp HEX: #22142b</span>
             <span>&nbsp RGB: (34,20,43)</span>
           </div>

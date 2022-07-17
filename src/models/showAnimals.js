@@ -1,4 +1,6 @@
-function showAnimals(pets) {
+import "../App.css";
+
+export function showAnimals(pets) {
   const results = document.querySelector("#results");
 
   results.innerHTML = "";

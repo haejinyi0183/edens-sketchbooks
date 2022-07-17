@@ -16,7 +16,7 @@ export async function handleClick(event) {
   let token;
 
   await fetch("https://api.petfinder.com/v2/oauth2/token", {
-    body: `grant_type=client_credentials&client_id=${process.env.API_KEY}&client_secret=${process.env.API_SECRET}`,
+    body: `grant_type=client_credentials&client_id=${process.env.REACT_APP_API_KEY}&client_secret=${process.env.REACT_APP_API_SECRET}`,
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
@@ -25,7 +25,7 @@ export async function handleClick(event) {
     .then((res) => res.json())
     .then((data) => {
       token = data.access_token;
-      console.log(token);
+      // console.log(token);
     })
     .then(() => {
       fetch(

@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const uri = process.env.MONGO_URI;
+const uri = process.env.REACT_APP_MONGO_URI;
 const path = require('path');
 // const fs = require('fs');
 
@@ -54,7 +54,7 @@ mongoose
 
 
 
-  app.listen(process.env.PORT || 3000, function(){
+  app.listen(process.env.REACT_APP_PORT || 3000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
   });
 

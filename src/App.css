@@ -11,7 +11,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  color: cornsilk;
+  color: rgb(203, 203, 203);
 }
 
 html {
@@ -125,6 +125,7 @@ a:visited {
   z-index: 1;
   transition: all 0.8s ease;
 }
+
 
 .footer {
   position: absolute;
@@ -362,5 +363,30 @@ padding-right: 1em;
 }
 
 .search-box {
+  border-radius: 25%;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  max-width: 100%;
+  width: auto;
   margin-top: 250px;
 }
+
+
+
+.listItems {
+  background-color: #349367;
+  border: 0;
+}
+
+.mask1 {
+  -webkit-mask-image: linear-gradient(to top, transparent 3%, black 30%);
+  mask-image: linear-gradient(to top, transparent 3%, black 45%);
+}
+
+.petImg {
+  align-items: center;
+  border-radius: 25%;
+}
+
+
