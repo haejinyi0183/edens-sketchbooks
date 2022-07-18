@@ -51,7 +51,6 @@ mongoose
   app.post('/signOn', user)
 
 
-  app.listen(process.env.REACT_APP_PORT || 3000, function(){
-    console.log(`Express server listening on port ${process.env.REACT_APP_PORT}`);
-  });
+  const port_number = server.listen(process.env.PORT || 3000);
+  app.listen(port_number);
 
