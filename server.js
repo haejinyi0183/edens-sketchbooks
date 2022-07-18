@@ -52,6 +52,6 @@ mongoose
 
 
   app.listen(process.env.REACT_APP_PORT || 3000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+    console.log(`Express server listening on port ${process.env.REACT_APP_PORT}`);
   });
 
