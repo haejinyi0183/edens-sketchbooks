@@ -48,10 +48,7 @@ mongoose
   //   next();
   // });
 
-  app.post('/signOn', user, (req, res) => {
-    res.redirect('http://');
-  });
-
+  app.post('/signOn', user)
 
 
   app.listen(process.env.REACT_APP_PORT || 3000, function(){

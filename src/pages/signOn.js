@@ -24,7 +24,7 @@ const SignOn = () => {
                 type="email"
                 className="form-control"
                 placeholder="name@example.com"
-                autocomplete="off"
+                autoComplete="off"
               />
               <label className="text-muted">Email address</label>
             </div>
